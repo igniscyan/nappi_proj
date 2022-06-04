@@ -1,0 +1,244 @@
+body {
+    background-image: url(./water_texture.jpg);
+
+    background-color: lightgray;
+    color: purple;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+h1 {
+    color: rebeccapurple;
+    text-align: center;
+    font: bold 30px Arial, sans-serif;
+}
+
+h2 {
+    color: rebeccapurple;
+    text-align: center;
+    font: bold 22px Arial, sans-serif;
+}
+
+h3 {
+    color: rebeccapurple;
+    text-align: center;
+    font: bold 20px Arial, sans-serif;
+}
+
+a {
+    font: 18px Arial, sans-serif;
+}
+
+a:hover {
+    background-color: yellow;
+    font: bold 18px Arial, sans-serif;
+}
+
+p {
+    font: 18px Arial, sans-serif;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p.error {
+    color: red;
+}
+
+li {
+    font: italic 18px Arial, sans-serif;
+}
+
+ol {
+    text-align: left;
+}
+
+table {
+    font: 18px Arial, sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 15px;
+    border-spacing: 5px;
+}
+
+td {
+    font: 18px Arial, sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+tr,
+th {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* */
+
+
+form {
+    /* Center the form on the page */
+    margin: auto;
+    width: auto;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    font: italic 18px Arial, sans-serif;
+
+}
+
+select {
+    display: inline-block;
+    width: auto;
+}
+
+textarea {
+    /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+    margin-left: .5em;
+
+}
+
+/* Custom Radio Buttons aka Container template from W3S */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font: italic 18px Arial, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 2;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
