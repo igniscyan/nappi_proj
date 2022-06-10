@@ -10,23 +10,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
 
-    <title>Assignment 6: PHP Scripting & File Processing</title>
+    <title>Assignment 7: DIME II Final Project - ID Services Form</title>
 
     </head>
 <body>
 
 
-<h1>Assignment 6: PHP and File Processing</h1>
+<h1>Assignment 7: DIME II Final Project</h1>
 <hr>
-<h2>Immersive Learning Technologies Quiz</h2>
-<h3>Please refer to the information covered in <a href="http://anthonynappicom.startlogic.com/eme6209/assign2/index.html">
-        Lesson 2</a> and complete the following comprehension check.</h3>
+<h2>Instructional Design Services Form</h2>
+<h3>Please enter information in the form below to let the Instructional Design team know some details about your course development needs.</h3>
 
 <form action="process.php" method="post">
 <br>
 <div style="text-align: center;">
-    <label for="fname"><b>What is your first name?</b></label>
-        <input type="text" name="fname" placeholder="Example: 'John'"> <br><br>
+    <label for="instructor"><b>Who is the course instructor?</b></label>
+        <input type="text" name="fname" placeholder="Example: 'John'"> <br>
+        <br>
+<div style="text-align: center;">
+    <label for="coursename"><b>What is the course code?</b></label>
+        <input type="text" name="coursename" placeholder="Example: 'ABC1234'"> <br><br>
 </div>
     <hr>
 
