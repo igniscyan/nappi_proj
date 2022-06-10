@@ -27,7 +27,7 @@ services:
       - ./certs/certificate.pem:/etc/ssl/certs/certificate.pem
       - ./certs/privatekey.pem:/etc/ssl/private/privatekey.pem
     ports:
-      - 3306:3306
+      - 3036:3306
 
   adminer:
     image: adminer
