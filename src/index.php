@@ -21,7 +21,7 @@
 <h2>Instructional Design Services Form</h2>
 <h3>Please enter information in the form below to let the Instructional Design team know some details about your course development needs.</h3>
 
-<form action="process.php" method="post">
+<form action="add.php" method="post">
 <br>
 <div style="text-align: left;">
     <label for="instructor"><b>Who is the course instructor?</b></label>
