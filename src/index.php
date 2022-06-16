@@ -23,7 +23,7 @@
 
 <form action="process.php" method="post">
 <br>
-<div style="text-align: center;">
+<div style="text-align: left;">
     <label for="instructor"><b>Who is the course instructor?</b></label>
         <input type="text" name="fname" placeholder="Example: 'John'"> <br>
         <br>
