@@ -28,12 +28,12 @@
         <input type="text" name="fname" placeholder="Example: 'John'"> <br>
         <br>
 
-        <div style="text-align: center;">
+        <div style="text-align: left;">
     <label for="email"><b>Instructor Email?</b></label>
         <input type="text" name="course_email" placeholder="Example: 'albertgator@ufl.edu'"> <br>
         <br>
 
-<div style="text-align: center;">
+<div style="text-align: left;">
     <label for="coursename"><b>What is the course code?</b></label>
         <input type="text" name="coursename" placeholder="Example: 'ABC1234'"> <br><br>
 </div>
