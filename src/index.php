@@ -25,12 +25,12 @@
 <br>
 <div style="text-align: left;">
     <label for="instructor"><b>Who is the course instructor?</b></label>
-        <input type="text" name="fname" placeholder="Example: 'John'"> <br>
+        <input type="text" name="instructor" placeholder="Example: 'Dr. John Gator'"> <br>
         <br>
 
         <div style="text-align: left;">
     <label for="email"><b>Instructor Email?</b></label>
-        <input type="text" name="course_email" placeholder="Example: 'albertgator@ufl.edu'"> <br>
+        <input type="text" name="email" placeholder="Example: 'johngator@ufl.edu'"> <br>
         <br>
 
 <div style="text-align: left;">
@@ -50,20 +50,28 @@
     <br><hr>
 <br>
     <b>Has this course been taught in a previous term?</b><br><br>
-        <input type="radio" name="taughtyes" value="ans1">
-    <label for="ans1">Yes</label><br>
-    <input type="radio" name="taughtno" value="ans2">
-    <label for="ans2">No</label><br>
+        <input type="radio" name="taught" value="yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" name="taught" value="no">
+    <label for="no">No</label><br>
     <hr>
+
+    <b>When will this course be taught?</b><br><br>
+    <select name="term">
+        <option value="Spring"> Spring</option>
+        <option value="Summer"> Summer</option>
+        <option value="Fall"> Fall</option>
+        <option value="Other"> Other</option>
+    </select>
 
     <br>
     <b>Which of the following course development items would you like to see in your course? Check all that apply:</b><br><br>
-    <input type="checkbox" name="q4[]" value="ans1">
-    <label for="ans1"> Course mapping (evaluation and alignment of learning goals)</label><br>
-    <input type="checkbox" name="q4[]" value="ans2">
-    <label for="ans2"> Styled Module pages in Canvas</label><br>
-    <input type="checkbox" name="q4[]" value="ans3">
-    <label for="ans3"> Original lectures/presentations recorded in professional studio environment </label><br>
+    <input type="checkbox" name="q4[]" value="map">
+    <label for="map"> Course mapping (evaluation and alignment of learning goals)</label><br>
+    <input type="checkbox" name="q4[]" value="style">
+    <label for="style"> Styled Module pages in Canvas</label><br>
+    <input type="checkbox" name="q4[]" value="studio">
+    <label for="studio"> Original lectures/presentations recorded in professional studio environment </label><br>
     <br><hr>
 
     <br>
