@@ -48,11 +48,11 @@ if (isset($_POST)) {
     $query = "INSERT INTO courses (course_instructor, instructor_email, course_code, course_level, course_taught, course_period, course_mapping, course_modules, course_recorded, course_comments) VALUES ('$instructor', '$email', '$coursename', '$courselevel', '$taught', '$term', '$map', '$style', '$studio', '$comments')";
 
 if ($mysqli->query($query) === TRUE) {
-    echo "New record created successfully";
+    //echo "New record created successfully";
+    header("Location: /index.php");
   } else {
     echo "Error: " . $query . "<br>" . $mysqli->error;
   }
-    header("Location: /index.php");
 }
 
 ?>

@@ -58,7 +58,8 @@ if (isset($_POST)) {
 }
 
 if ($mysqli->query($query) === TRUE) {
-    echo "Record updated successfully";
+    //echo "Record updated successfully";
+    header("Location: /index.php");
   } else {
     echo "Error: " . $query . "<br>" . $mysqli->error;
   }
