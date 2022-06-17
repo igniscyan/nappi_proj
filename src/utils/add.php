@@ -23,7 +23,7 @@ if (isset($_POST)) {
             echo "Array doesn't contains the Name";
             $map = 0;
         }
-        if (strpos(json_encode($serice),"style") !== false) {
+        if (strpos(json_encode($service),"style") !== false) {
             echo "Array contains style";
             $style = 1;
         }
