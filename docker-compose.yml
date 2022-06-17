@@ -11,7 +11,7 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./src/:/var/www/html/
+      - ./src/:/var/www/html/ #This is where we specified where docker should be looking. 
 
   db:
     
